@@ -1,0 +1,17 @@
+.greetings{
+    background-image: linear-gradient(43deg, white, #4f06ec 40%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.name{
+    background-image: linear-gradient(43deg, white 10%, #8962de, #4f06ec 70%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.desc{
+    background-image: linear-gradient(43deg, white 40%, #8962de, #4f06ec 90%);
+    -webkit-background-clip: text;
+    color: transparent;
+}

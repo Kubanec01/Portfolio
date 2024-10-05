@@ -1,9 +1,13 @@
+import {BrowserRouter  as Router } from "react-router-dom"
+import { MainRoutes } from "./routes/MainRoutes"
+import { NavBar } from "./components/navbar/Navbar"
 
 function App() {
   return (
-    <>
-    <h1>hello baby</h1>
-    </>
+    <Router>
+      <NavBar />
+      <MainRoutes />
+    </Router>
   )
 }
 

@@ -1,0 +1,24 @@
+$primary-color: #4f06ec;
+
+.link {
+    position: relative;
+    color: white;
+    transition: all 0.2s ease-in-out;
+
+    &::after{
+        content: '';
+        background: $primary-color;
+        border-radius: 2px;
+        width: 130%;
+        height: 3px;
+        position: absolute;
+        bottom: -8px;
+        left: -15%;
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+    }
+
+    &:hover::after{
+        opacity: 1;
+    }
+}
