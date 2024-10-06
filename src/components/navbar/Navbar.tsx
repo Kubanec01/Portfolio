@@ -4,8 +4,8 @@ import style from "./navbar.module.scss"
 
 export const NavBar = () => {
   return (
-    <Navbar className="w-full h-[60px] bg-primary flex justify-center items-center">
-        <Nav className="text-xl gap-40 max-w-[1300px] flex justify-center">
+    <Navbar className="w-full mt-[30px] flex justify-center items-center">
+        <Nav className="text-xl gap-24 max-w-[1300px] flex justify-center font-semibold text-secondary">
           <a
           className={style.link}
           href="">About</a>
