@@ -2,8 +2,8 @@ import { IoArrowDownOutline } from "react-icons/io5";
 
 export const Hero = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center h-[600px]">
-      <div className="flex flex-col items-center text-secondary my-[140px]">
+    <div className="w-full flex flex-col justify-center items-center h-[900px]">
+      <div className="flex flex-col items-center text-secondary mb-[140px]">
         <h1 className="text-[11rem] font-semibold tracking-[-3px]">
           Hi, I'm Jacob.
         </h1>
