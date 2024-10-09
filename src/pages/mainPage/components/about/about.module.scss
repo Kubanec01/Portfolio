@@ -1,3 +1,30 @@
-.link{
-    color: #8fdcc2;
+.bar1{
+    box-shadow: 10px 10px 30px #1d1d1d1a;
+    transition: all 0.2s ease-in-out;
+    // background: #bbebe0ac;
+    background: #6ae5c8ac;
+}
+
+// tuto treba dorobit zvlast farby pre texty aby sa zbledli ked sa background stmavne, to iste plati aj pre bar2
+
+.bar1:hover{
+    transform: translateY(-2%);
+    box-shadow: 20px 30px 20px #1d1d1d25;
+    background: #6ae5c8ac;
+}
+.bar2{
+    box-shadow: 10px 10px 30px #1d1d1d1a;
+    transition: all 0.2s ease-in-out;
+}
+
+.bar2:hover{
+    transform: translateY(-2%);
+    box-shadow: 20px 30px 20px #1d1d1d25;
+}
+
+.img{
+    border-radius: 52% 48% 50% 50% / 30% 30% 70% 70%  ;
+    object-fit: cover;
+    object-position: center;
+    border: 3.5px solid #ffffff29;
 }
