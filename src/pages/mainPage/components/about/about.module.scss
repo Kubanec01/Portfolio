@@ -1,38 +1,43 @@
-.text{
-    text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.081);
-}
+
 
 
 .bar1{
     box-shadow: 10px 10px 30px #1d1d1d1a;
     transition: all 0.2s ease-in-out;
     // background: #bbebe0ac;
-    background: #6ae5c8ac;
+    background-image: url('../../../../assets/Dev-img.jpg');
+    
+    &:hover{
+        transform: translateY(-2%);
+        box-shadow: 20px 30px 20px #1d1d1d25;
+    }
 }
 
-// tuto treba dorobit zvlast farby pre texty aby sa zbledli ked sa background stmavne, to iste plati aj pre bar2
-
-.bar1:hover{
-    transform: translateY(-2%);
-    box-shadow: 20px 30px 20px #1d1d1d25;
-    background: #6ae5c8ac;
+.devBarStars{
+    opacity: 0;
 }
+
+.desBarStars{
+    opacity: 0;
+}
+
 .bar2{
     box-shadow: 10px 10px 30px #1d1d1d1a;
     transition: all 0.2s ease-in-out;
-}
-
-.bar2:hover{
-    transform: translateY(-2%);
-    box-shadow: 20px 30px 20px #1d1d1d25;
+    background-image: url('../../../../assets/UX-UI-bar-img.jpg');
+    
+    &:hover{
+        transform: translateY(-2%);
+        box-shadow: 20px 30px 20px #1d1d1d25;
+    }
 }
 
 .bar3{
     box-shadow: 10px 10px 30px #1d1d1d1a;
     transition: all 0.2s ease-in-out;
-}
 
-.bar3:hover{
-    transform: translateY(-2%);
-    box-shadow: 20px 30px 20px #1d1d1d25;
+    &:hover{
+        transform: translateY(-2%);
+        box-shadow: 20px 30px 20px #1d1d1d25;
+    }
 }
