@@ -3,13 +3,16 @@ import image1 from "../../../../assets/author-img.png";
 import { PiBrain } from "react-icons/pi";
 import { PiMagicWandLight } from "react-icons/pi";
 import { PiStarFour } from "react-icons/pi";
+import { Skills } from "../skills/Skills";
+
 
 export const About = () => {
   return (
-    <div className="flex flex-col justify-center items-center bg-slate-200">
+    <div className="flex flex-col justify-center items-center bg-slate-200 mb-[200px]">
+      {/* DESCRIPTION TEXT */}
       <div className="w-[1300px] my-[100px]">
         <h1
-          className={`${style.text} text-6xl font-bold uppercase text-[#0000005c]`}
+          className="text-6xl font-bold uppercase text-[#0000005c]"
         >
           Something <br /> About <br /> Me
         </h1>
@@ -28,7 +31,7 @@ export const About = () => {
             designs and engaging functionality. I transform ideas into smooth
             digital experiences, turning websites into works of art.
           </p>
-          <PiBrain className="absolute bottom-3 right-5 text-7xl text-[#edfaf6]" />
+          <PiBrain className="absolute bottom-3 right-5 text-7xl text-[#e3fcf4]" />
           <PiStarFour
             className={`${style.devBarStars} absolute text-8xl text-white -top-12 left-6 rotate-[20deg]`}
           />
@@ -87,6 +90,7 @@ export const About = () => {
           </p>
         </div>
       </div>
+        <Skills />
     </div>
   );
 };
