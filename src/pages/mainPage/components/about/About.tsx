@@ -4,6 +4,7 @@ import { PiBrain } from "react-icons/pi";
 import { PiMagicWandLight } from "react-icons/pi";
 import { PiStarFour } from "react-icons/pi";
 import { Skills } from "../skills/Skills";
+import { Work } from "../work/Work";
 
 
 export const About = () => {
@@ -91,6 +92,7 @@ export const About = () => {
         </div>
       </div>
         <Skills />
+        <Work />
     </div>
   );
 };

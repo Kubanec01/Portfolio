@@ -1,12 +1,16 @@
 import {programs} from "../../../../data/programs"
-import image from "../../../../assets/skills-bg-img.jpg"
+import style from "./skills.module.scss"
 
 
 export const Skills = () => {
+
+  const skillBg1 = "#7E7DE8";
+  const skillBg2 = "#EB8AFF";
+
   return (
-    <div className="border border-red-600 w-[1500px] my-[200px]">
+    <div className="w-full max-w-[1400px] my-[200px]">
       {/* SKILLS TEXT */}
-      <div className="w-[1300px] mx-auto">
+      <div className="w-full max-w-[1300px] mx-auto">
         <h1
           className="text-6xl font-bold uppercase text-[#0000005c]"
         >
@@ -14,25 +18,24 @@ export const Skills = () => {
         </h1>
       </div>
       {/* SKILLS BARS */}
-      <div className="border border-green-600 mt-[100px] w-full h-[700px]">
+      <div
+      className="rounded-2xl mt-[100px] w-full h-[700px] bg-[#00000004] relative">
         {programs.map(p => {
             return (
                 <div
                 key={p.id}
-                // style={{
-                //     backgroundImage: `url(${image})`,
-                //     backgroundRepeat: 'no-repeat',
-                //     backgroundSize: 'cover',
-                //     backgroundPosition: 'center',
-                // }}
-                className="w-[300px] h-[90px] flex justify-around rounded-xl mt-2 p-2 bg-[#ff8ec4]">
+                style={{
+                  boxShadow: "5px 5px 20px rgba(0,0,0,0.1)",
+                  background: `linear-gradient(43deg, ${skillBg1}, ${skillBg2})`,
+                }}
+                className={`${style[p.className]} w-[300px] h-[90px] flex justify-around rounded-2xl mt-2 p-2`}>
                     <div className="w-[28%] flex justify-center items-center">
                         <img
                         className="object-cover aspect-square rounded-2xl w-[84%]"
                         src={p.image} alt={`${p.name} logo`} />
                     </div>
                     <div className="w-[72%] flex justify-center items-center">
-                        <h1 className="text-white text-xl ">
+                        <h1 className="text-[#ffffff] text-xl ">
                             {p.name}
                         </h1>
                     </div>
@@ -43,3 +46,6 @@ export const Skills = () => {
     </div>
   );
 };
+
+
+
