@@ -1,0 +1,15 @@
+// Colors
+$primary-color: #8684BF;
+$secondary-color: #BF6FA3;
+$tertiary-color: #F2A7D0;
+$button-color: #7975e1;
+
+.title{
+    background-image: linear-gradient(43deg, $primary-color ,$secondary-color ,$tertiary-color);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.linkButton{
+    background: $button-color;
+}
