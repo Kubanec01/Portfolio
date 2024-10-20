@@ -3,6 +3,10 @@ import style from "./work.module.scss"
 
 export const Work = () => {
   return (
+      <div
+      className="w-full bg-[#12121207]"
+      >
+
     <div className="max-w-[1400px] mx-auto my-[80px] px-2">
       {/* WORK TITLE/LINK BUTTON */}
       <div
@@ -23,9 +27,10 @@ export const Work = () => {
       </div>
       {/* WORK BARS */}
       <div
-      className="mt-[80px] flex justify-center">
+      className="mt-[80px] flex flex-col items-center gap-32 justify-center">
         <Project />
       </div>
     </div>
+        </div>
   );
 };

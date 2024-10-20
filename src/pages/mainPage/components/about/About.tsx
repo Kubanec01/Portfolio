@@ -9,7 +9,7 @@ import { Work } from "../work/Work";
 
 export const About = () => {
   return (
-    <div className="flex flex-col justify-center items-center bg-slate-200 mb-[200px]">
+    <div className="flex flex-col justify-center items-center bg-slate-200 ">
       {/* DESCRIPTION TEXT */}
       <div className="w-[1300px] my-[100px]">
         <h1

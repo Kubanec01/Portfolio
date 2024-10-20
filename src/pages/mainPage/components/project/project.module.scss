@@ -1,0 +1,15 @@
+.barBody {
+
+    border-radius: 26px;
+    border: 3.5px solid rgba(0, 0, 0, 0.798);
+    cursor: pointer;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.371);
+    transition: all 0.2s ease-in-out;
+
+  &:hover {
+    border-radius: 24px;
+    border: 3.5px solid rgb(136, 136, 136);
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.414);
+    transform: translateY(-10px);
+  }
+}
