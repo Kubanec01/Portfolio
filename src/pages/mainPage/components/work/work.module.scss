@@ -1,11 +1,11 @@
 // Colors
-$primary-color: #8684BF;
-$secondary-color: #BF6FA3;
-$tertiary-color: #F2A7D0;
-$button-color: #9491ee;
+$primary-color: #737373;
+$secondary-color: #262626;
+$tertiary-color: #0d0d0db6;
+$button-color: #fd6f6d;
 
 .title{
-    background-image: linear-gradient(43deg, $primary-color ,$secondary-color ,$tertiary-color);
+    background-image: linear-gradient(to top, $primary-color ,$secondary-color ,$tertiary-color);
     -webkit-background-clip: text;
     color: transparent;
 }

@@ -13,7 +13,7 @@ export const Project = () => {
               style={{
                 borderRadius: "20px 20px 0 0",
               }}
-              className="flex justify-center bg-[#151515]"
+              className="flex justify-center bg-[#f6f6f6a3]"
             >
               <img
                 className="object-cover"
@@ -26,13 +26,13 @@ export const Project = () => {
               style={{
                 borderRadius: " 0 0 20px 20px",
               }}
-              className="flex justify-between bg-[#272727]"
+              className="flex justify-between bg-[#292929]"
             >
               <div className="mb-[20px]">
-                <h1 className="text-2xl font-semibold text-[#ffffffea] mt-[20px] ml-[20px]">
+                <h1 className="text-2xl font-semibold text-[#fffffff5] mt-[20px] ml-[20px]">
                   {p.title}
                 </h1>
-                <p className="text-lg font-medium w-[70%] text-[#ffffffae] mt-[2px] ml-[20px]">
+                <p className="text-lg font-medium w-[70%] text-[#ffffffa6] mt-[2px] ml-[20px]">
                   {p.desc}
                 </p>
               </div>

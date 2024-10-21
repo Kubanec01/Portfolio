@@ -5,16 +5,14 @@ import { PiMagicWandLight } from "react-icons/pi";
 import { PiStarFour } from "react-icons/pi";
 import { Skills } from "../skills/Skills";
 import { Work } from "../work/Work";
-
+import { FaGithub } from "react-icons/fa";
 
 export const About = () => {
   return (
     <div className="flex flex-col justify-center items-center bg-slate-200 ">
       {/* DESCRIPTION TEXT */}
       <div className="w-[1300px] my-[100px]">
-        <h1
-          className="text-6xl font-bold uppercase text-[#0000005c]"
-        >
+        <h1 className="text-6xl font-bold uppercase text-[#0000005c]">
           Something <br /> About <br /> Me
         </h1>
       </div>
@@ -68,31 +66,54 @@ export const About = () => {
           />
         </div>
       </div>
-      {/* AUTHOR BAR */}
-      <div
-        className={`${style.bar3} max-w-[1300px] h-[600px] flex mb-10 bg-[#cfcdcd] rounded-3xl mt-[40px]`}
-      >
-        <div className="w-[46%] flex justify-center items-end">
-          <img className={` object-cover aspect-square`} src={image1} alt="" />
+      {/* AUTHOR BARS */}
+      <div className="max-w-[1300px] flex justify-between gap-2">
+        {/* AUTHOR BAR */}
+        <div
+          className={`${style.bar3} w-[90%] flex bg-[#cfcdcd] rounded-3xl my-[40px]`}
+        >
+          <div className="w-[50%] flex justify-center items-end">
+            <img
+              className={` object-cover aspect-square`}
+              src={image1}
+              alt=""
+            />
+          </div>
+          <div className="w-[45%] py-10">
+            <h1 className="text-4xl mt-[40px] font-bold text-[#000000d0]">
+              Junior Front-End Developer <br /> from Slovakia.
+            </h1>
+            <p className="text-xl w-[95%] font-semibold mt-[10px] text-[#000000b0]">
+              With a strong interest in web design and UX/UI, I love working
+              with HTML, CSS, and TypeScript while actively focusing on React
+              and modern design technologies such as i18next, Tailwind,
+              Bootstrap, Framer Motion, and many others. Currently, I’m
+              enhancing my skills in React and gaining more experience in
+              front-end development. In my free time, I explore new technologies
+              and keep up with trends in design and useful frameworks. You can
+              check out my work below or directly on GitHub.
+            </p>
+          </div>
         </div>
-        <div className="w-[54%] flex flex-col justify-center">
-          <h1 className="text-5xl font-semibold text-[#000000d0]">
-            Junior Front-End Developer <br /> from Slovakia.
+        {/* GITHUB BAR */}
+        <div
+        className="w-[10%] border border-black bg-[#000000f3] my-[40px] rounded-3xl flex items-center justify-center"
+        >
+          <h1 
+          className="text-6xl font-bold text-center text-[white]"
+          >
+            S <br />
+            E <br />
+            E <br />
+            M <br />
+            <FaGithub />
+            R <br />
+            E <br />
           </h1>
-          <p className="text-2xl w-[80%] font-medium mt-[30px] text-[#000000b0]">
-            With a strong interest in web design and UX/UI, I love working with
-            HTML, CSS, and TypeScript while actively focusing on React and
-            modern design technologies such as i18next, Tailwind, Bootstrap,
-            Framer Motion, and many others. Currently, I’m enhancing my skills
-            in React and gaining more experience in front-end development. In my
-            free time, I explore new technologies and keep up with trends in
-            design and useful frameworks. You can check out my work below or
-            directly on GitHub.
-          </p>
         </div>
       </div>
-        <Skills />
-        <Work />
+      <Skills />
+      <Work />
     </div>
   );
 };
