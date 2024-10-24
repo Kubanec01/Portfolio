@@ -4,8 +4,8 @@ import style from "./skills.module.scss"
 
 export const Skills = () => {
 
-  const skillBg1 = "#7E7DE8";
-  const skillBg2 = "#EB8AFF";
+  const skillBg1 = "#7CA68E";
+  const skillBg2 = "#D99E91";
 
   return (
     <div className="w-full max-w-[1400px] my-[200px]">
@@ -26,16 +26,17 @@ export const Skills = () => {
                 key={p.id}
                 style={{
                   boxShadow: "5px 5px 20px rgba(0,0,0,0.1)",
-                  background: `linear-gradient(43deg, ${skillBg1}, ${skillBg2})`,
+                  // background: `linear-gradient(43deg, ${skillBg1}, ${skillBg2})`,
                 }}
-                className={`${style[p.className]} w-[300px] h-[90px] flex justify-around rounded-2xl mt-2 p-2`}>
+                // ! skus spravit ako bg na bars zrkadlovy efekt
+                className={`${style[p.className]} w-[300px] h-[90px] bg-[#ffffff91] flex justify-around rounded-2xl mt-2 p-2`}>
                     <div className="w-[28%] flex justify-center items-center">
                         <img
                         className="object-cover aspect-square rounded-2xl w-[84%]"
                         src={p.image} alt={`${p.name} logo`} />
                     </div>
                     <div className="w-[72%] flex justify-center items-center">
-                        <h1 className="text-[#ffffff] text-xl ">
+                        <h1 className="text-[#000000d6] font-semibold text-xl ">
                             {p.name}
                         </h1>
                     </div>

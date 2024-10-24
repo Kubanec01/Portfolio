@@ -5,19 +5,25 @@ import { PiMagicWandLight } from "react-icons/pi";
 import { PiStarFour } from "react-icons/pi";
 import { Skills } from "../skills/Skills";
 import { Work } from "../work/Work";
-import { FaGithub } from "react-icons/fa";
 
 export const About = () => {
   return (
-    <div className="flex flex-col justify-center items-center bg-slate-200 ">
+    <div 
+    className="flex flex-col justify-center items-center bg-slate-200 ">
       {/* DESCRIPTION TEXT */}
-      <div className="w-[1300px] my-[100px]">
+      <div
+      id="about-title"
+      style={{
+        scrollMargin: "80px"
+      }}
+      className="w-[1300px] my-[100px]">
         <h1 className="text-6xl font-bold uppercase text-[#0000005c]">
           Something <br /> About <br /> Me
         </h1>
       </div>
       {/* BARS SECTION */}
-      <div className="max-w-[1300px] flex justify-between gap-10">
+      <div
+      className="max-w-[1300px] flex justify-between gap-10">
         {/* DEVELOPER BAR */}
         <div
           className={`${style.bar1} w-[50%] h-[300px] p-5 flex flex-col rounded-3xl relative`}
@@ -70,20 +76,20 @@ export const About = () => {
       <div className="max-w-[1300px] flex justify-between gap-2">
         {/* AUTHOR BAR */}
         <div
-          className={`${style.bar3} w-[90%] flex bg-[#cfcdcd] rounded-3xl my-[40px]`}
+          className={`${style.bar3} w-full flex bg-[#cfcdcd] rounded-3xl my-[40px]`}
         >
-          <div className="w-[50%] flex justify-center items-end">
+          <div className="w-[45%] flex justify-center items-end">
             <img
               className={` object-cover aspect-square`}
               src={image1}
               alt=""
             />
           </div>
-          <div className="w-[45%] py-10">
-            <h1 className="text-4xl mt-[40px] font-bold text-[#000000d0]">
+          <div className="w-[55%] py-10">
+            <h1 className="text-4xl mt-[60px] font-bold text-[#000000d0]">
               Junior Front-End Developer <br /> from Slovakia.
             </h1>
-            <p className="text-xl w-[95%] font-semibold mt-[10px] text-[#000000b0]">
+            <p className="text-2xl w-[85%] font-medium mt-[10px] text-[#000000b0]">
               With a strong interest in web design and UX/UI, I love working
               with HTML, CSS, and TypeScript while actively focusing on React
               and modern design technologies such as i18next, Tailwind,
@@ -94,22 +100,6 @@ export const About = () => {
               check out my work below or directly on GitHub.
             </p>
           </div>
-        </div>
-        {/* GITHUB BAR */}
-        <div
-        className="w-[10%] border border-black bg-[#000000f3] my-[40px] rounded-3xl flex items-center justify-center"
-        >
-          <h1 
-          className="text-6xl font-bold text-center text-[white]"
-          >
-            S <br />
-            E <br />
-            E <br />
-            M <br />
-            <FaGithub />
-            R <br />
-            E <br />
-          </h1>
         </div>
       </div>
       <Skills />

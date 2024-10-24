@@ -1,17 +1,13 @@
-.greetings{
-    background-image: linear-gradient(43deg, white, #4f06ec 40%);
-    -webkit-background-clip: text;
-    color: transparent;
-}
+.link {
+transition: all .2s ease;
+color: #ffffffd0;
 
-.name{
-    background-image: linear-gradient(43deg, white 10%, #8962de, #4f06ec 70%);
-    -webkit-background-clip: text;
-    color: transparent;
-}
+    &:hover{
+    transform: scale(1.1);
+    color: whitesmoke;
+    }
 
-.desc{
-    background-image: linear-gradient(43deg, white 40%, #8962de, #4f06ec 90%);
-    -webkit-background-clip: text;
-    color: transparent;
+    &:active{
+        transform: scale(0.8);
+    }
 }
