@@ -1,10 +1,13 @@
+$primary:#b6f445;
+$secondary:#4831d4;
+
 .link {
 transition: all .2s ease;
-color: #ffffffd0;
+color: $secondary;
+background: $primary;
 
-    &:hover{
+&:hover{
     transform: scale(1.1);
-    color: whitesmoke;
     }
 
     &:active{

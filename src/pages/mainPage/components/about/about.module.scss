@@ -1,16 +1,13 @@
-
+$primary: #0e0e0e;
+$secondary: #4731d491;
 
 
 .bar1{
     box-shadow: 10px 10px 30px #1d1d1d1a;
     transition: all 0.2s ease-in-out;
-    // background: #bbebe0ac;
-    background-image: url('../../../../assets/Dev-img.jpg');
-    
-    
     &:hover{
         transform: translateY(-2%);
-        box-shadow: 20px 30px 20px #1d1d1d25;
+        box-shadow: 20px 30px 20px #00000026;
     }
 }
 
@@ -24,12 +21,10 @@
 
 .bar2{
     box-shadow: 10px 10px 30px #1d1d1d1a;
-    transition: all 0.2s ease-in-out;
-    background-image: url('../../../../assets/UX-UI-bar-img.jpg');
-    
+    transition: all 0.2s ease-in-out;    
     &:hover{
         transform: translateY(-2%);
-        box-shadow: 20px 30px 20px #1d1d1d25;
+        box-shadow: 20px 30px 20px #00000026;
     }
 }
 
@@ -39,6 +34,11 @@
 
     &:hover{
         transform: translateY(-2%);
-        box-shadow: 20px 30px 20px #1d1d1d25;
+        box-shadow: 20px 30px 20px #00000026;
     }
+}
+
+.barsSection{
+    background: linear-gradient(to bottom, $primary 10%, $secondary, $primary 80%);
+    width: 100%;
 }

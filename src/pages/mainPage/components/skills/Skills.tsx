@@ -12,7 +12,7 @@ export const Skills = () => {
       {/* SKILLS TEXT */}
       <div className="w-full max-w-[1300px] mx-auto">
         <h1
-          className="text-6xl font-bold uppercase text-[#0000005c]"
+          className="text-6xl font-bold uppercase text-primary300"
         >
           What I Love <br /> To Work <br /> With
         </h1>
