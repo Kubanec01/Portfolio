@@ -13,7 +13,7 @@ export const Project = () => {
               style={{
                 borderRadius: "20px 20px 0 0",
               }}
-              className="flex justify-center bg-[#f6f6f6a3]"
+              className="flex justify-center bg-[#c6c6c6]"
             >
               <img
                 className="object-cover"

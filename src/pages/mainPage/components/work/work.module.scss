@@ -1,8 +1,9 @@
 // Colors
 $primary-color: #737373;
-$secondary-color: #262626;
+$secondary-color: #454545;
 $tertiary-color: #0d0d0db6;
-$button-color: #fd6f6d;
+$button-color: #f9605d;
+$button-color-hover: #f94e4b;
 
 .title{
     background-image: linear-gradient(to top, $primary-color ,$secondary-color ,$tertiary-color);
@@ -12,4 +13,15 @@ $button-color: #fd6f6d;
 
 .linkButton{
     background: $button-color;
+    transition: all .2s ease;
+
+    &:hover{
+        background: $button-color-hover;
+        transform: scale(1.06);
+    }
+
+    &:active{
+        background: $button-color-hover;
+        transform: scale(0.9);
+    }
 }

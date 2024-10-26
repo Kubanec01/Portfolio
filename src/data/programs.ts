@@ -21,16 +21,16 @@ export const programs: Program[] = [
     className: "typeScript",
   },
   {
-    id: "react",
-    name: "React/React Native",
-    image: reactLogo,
-    className: "react",
-  },
-  {
     id: "javascript",
     name: "JavaScript",
     image: javaScriptLogo,
     className: "javascript",
+  },
+  {
+    id: "react",
+    name: "React/Native",
+    image: reactLogo,
+    className: "react",
   },
   {
     id: "photoshop",

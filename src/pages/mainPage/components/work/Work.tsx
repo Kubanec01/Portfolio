@@ -7,7 +7,7 @@ export const Work = () => {
       className="w-full bg-[#12121207]"
       >
 
-    <div className="max-w-[1400px] mx-auto my-[80px] px-2">
+    <div className="max-w-[1400px] mx-auto mt-[100px] px-2">
       {/* WORK TITLE/LINK BUTTON */}
       <div
       className="flex flex-col justify-center items-center"
