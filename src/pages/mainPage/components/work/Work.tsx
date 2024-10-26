@@ -4,10 +4,10 @@ import style from "./work.module.scss"
 export const Work = () => {
   return (
       <div
-      className="w-full bg-[#12121207]"
+      className="w-full"
       >
 
-    <div className="max-w-[1400px] mx-auto mt-[100px] px-2">
+    <div className="max-w-[1400px] mx-auto my-[100px] px-2">
       {/* WORK TITLE/LINK BUTTON */}
       <div
       className="flex flex-col justify-center items-center"
