@@ -1,9 +1,12 @@
+import { motion } from "framer-motion";
 import image1 from "../../../../../../assets/author-img.png";
 import style from "./authorInfoBar.module.scss"
 
+
 export const AuthorInfoBar = () => {
     return (
-        <div className="max-w-[1300px] mx-auto flex justify-between gap-2">
+        <div
+         className="max-w-[1300px] mx-auto flex justify-between gap-2">
           <div
             className={`${style.bar3} w-full flex bg-[#1d1d1d] rounded-3xl my-[40px]`}
           >

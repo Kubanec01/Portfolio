@@ -2,6 +2,7 @@ import style from "./devInfoBar.module.scss"
 import { PiBrain, PiStarFour } from "react-icons/pi";
 import { useHoverStatus } from "../../../../../../hooks/useHoverStatus";
 
+
 export const DevInfoBar = () => {
     
   const {isActive, mouseEnter, mouseLeave} = useHoverStatus()

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import {programs} from "../../../../data/programs"
 import style from "./skills.module.scss"
 
@@ -17,9 +18,20 @@ export const Skills = () => {
       {/* SKILLS BARS */}
       <div
       className="rounded-2xl mt-[100px] w-full flex justify-center gap-3 items-top">
-        {programs.map(p => {
+        {programs.map((p, index) => {
             return (
-                <div
+                <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{
+                  once: true,
+                  amount: 0.5,
+                }}
+                transition={{ duration: 0.3 + index * 0.1}}
+                variants={{
+                  hidden: { opacity: 0, y: 100 },
+                  visible: { opacity: 1, y: 0 },
+                }}
                 key={p.id}
                 className={`${style[p.className]} bg-[#2f2f2fda] w-[200px] h-[166px] py-3 flex-col justify-center items-center rounded-2xl mt-2 p-2`}>
                     <div className="flex justify-center items-center">
@@ -32,7 +44,7 @@ export const Skills = () => {
                             {p.name}
                         </h1>
                     </div>
-                </div>
+                </motion.div>
             )
         })}
       </div>

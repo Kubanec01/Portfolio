@@ -1,7 +1,7 @@
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
 import { GrFacebookOption } from "react-icons/gr";
 import style from "./footer.module.scss";
 import Spline from "@splinetool/react-spline";
@@ -29,22 +29,22 @@ export const Footer = () => {
                 </a>
               </li>
               <li className={`${link} ${style.link}`}>
-                <a href="#">
+                <a href="https://github.com/Kubanec01" target="_blank">
                   <FaGithub />
                 </a>
               </li>
               <li className={`${link} ${style.link}`}>
-                <a href="#">
+                <a href="tel:+421903871518">
                   <FaWhatsapp />
                 </a>
               </li>
               <li className={`${link} ${style.link}`}>
-                <a href="#">
-                  <FaInstagram />
+                <a href="mailto:jakub.z.roman@gmail.com" target="_blank">
+                  <MdOutlineEmail   />
                 </a>
               </li>
               <li className={`${link} ${style.link}`}>
-                <a href="#">
+                <a href="https://www.facebook.com/jakub.roman.351" target="_blank">
                   <GrFacebookOption />
                 </a>
               </li>
