@@ -11,7 +11,7 @@ export const Skills = () => {
         <h1
           className="text-6xl text-center font-bold uppercase text-[#4731d4c8]"
         >
-          What I Love <br /> To Work With
+          Tools I Love <br /> To Work With
         </h1>
       </div>
       {/* SKILLS BARS */}
@@ -28,7 +28,7 @@ export const Skills = () => {
                         src={p.image} alt={`${p.name} logo`} />
                     </div>
                     <div className="flex justify-center items-center mt-[12px]">
-                        <h1 className="text-[#dcdcdcb8] text-center font-semibold text-2xl ">
+                        <h1 className="text-[#ffffff89] text-center font-semibold text-2xl ">
                             {p.name}
                         </h1>
                     </div>

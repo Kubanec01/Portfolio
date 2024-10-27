@@ -1,9 +1,8 @@
 // Colors
-$primary-color: #737373;
+$primary-color: #908f8f;
 $secondary-color: #454545;
 $tertiary-color: #0d0d0db6;
-$button-color: #f9605d;
-$button-color-hover: #f94e4b;
+$button-color: #4a30f3e7;
 
 .title{
     background-image: linear-gradient(to top, $primary-color ,$secondary-color ,$tertiary-color);
@@ -15,13 +14,7 @@ $button-color-hover: #f94e4b;
     background: $button-color;
     transition: all .2s ease;
 
-    &:hover{
-        background: $button-color-hover;
-        transform: scale(1.06);
-    }
-
     &:active{
-        background: $button-color-hover;
         transform: scale(0.9);
     }
 }

@@ -1,19 +1,13 @@
-import { useState } from "react";
 import style from "./devInfoBar.module.scss"
 import { PiBrain, PiStarFour } from "react-icons/pi";
+import { useHoverStatus } from "../../../../../../hooks/useHoverStatus";
 
 export const DevInfoBar = () => {
-    const [isActive, setIsActive] = useState(false);
+    
+  const {isActive, mouseEnter, mouseLeave} = useHoverStatus()
 
-    console.log(isActive);
-  
-    const mouseEnter = () => {
-      return setIsActive(true);
-    };
-  
-    const mouseLeave = () => {
-      return setIsActive(false);
-    };
+    const visibilityStatus = isActive ? style.visible : style.invisible;
+
     return(
         <div
         onMouseEnter={mouseEnter}
@@ -31,13 +25,13 @@ export const DevInfoBar = () => {
         <PiBrain className="absolute bottom-3 right-5 text-7xl text-customWhite" />
         {/* STARS ICONS */}
         <PiStarFour
-          className={`${style.devBarStars} absolute text-8xl text-customWhite -top-12 left-6 rotate-[20deg]`}
+          className={`${visibilityStatus} absolute text-7xl text-customWhite -top-10 left-6 rotate-[20deg]`}
         />
         <PiStarFour
-          className={`${style.devBarStars} absolute text-8xl text-customWhite -bottom-8 right-24 rotate-[10deg]`}
+          className={`${visibilityStatus} absolute text-7xl text-customWhite -bottom-8 right-24 rotate-[10deg]`}
         />
         <PiStarFour
-          className={`${style.devBarStars} absolute text-6xl text-customWhite top-4 right-10 rotate-[150deg]`}
+          className={`${visibilityStatus} absolute text-6xl text-customWhite top-4 right-10 rotate-[150deg]`}
         />
       </div>
     )

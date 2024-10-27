@@ -1,4 +1,4 @@
-import { Project } from "../project/Project";
+import { Projects } from "./project/Projects";
 import style from "./work.module.scss"
 
 export const Work = () => {
@@ -7,7 +7,7 @@ export const Work = () => {
       className="w-full"
       >
 
-    <div className="max-w-[1400px] mx-auto my-[100px] px-2">
+    <div className="max-w-[1400px] mx-auto mt-[100px] mb-[160px] px-2">
       {/* WORK TITLE/LINK BUTTON */}
       <div
       className="flex flex-col justify-center items-center"
@@ -25,7 +25,7 @@ export const Work = () => {
       {/* WORK BARS */}
       <div
       className="mt-[80px] flex flex-col items-center gap-32 justify-center">
-        <Project />
+        <Projects />
       </div>
     </div>
         </div>

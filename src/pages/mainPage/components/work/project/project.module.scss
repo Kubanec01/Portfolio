@@ -1,3 +1,8 @@
+// COLORS
+$primary: rgba(255, 255, 255, 0.788);
+$secondary: #ffffff76;
+
+
 .barBody {
 
     border-radius: 26px;
@@ -10,4 +15,14 @@
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.282);
     transform: translateY(-10px);
   }
+}
+
+.inactive{
+  color: $secondary;
+  border: 2px solid $secondary;
+}
+
+.active{
+  color: $primary;
+  border: 2px solid $primary;
 }

@@ -1,28 +1,11 @@
 import style from "./about.module.scss";
-import image1 from "../../../../assets/author-img.png";
-import { PiBrain } from "react-icons/pi";
-import { PiMagicWandLight } from "react-icons/pi";
-import { PiStarFour } from "react-icons/pi";
 import { Skills } from "../skills/Skills";
 import { Work } from "../work/Work";
-import { useState } from "react";
 import { DevInfoBar } from "./infoBars/devInfoBar/DevInfoBar";
 import { DesInfoBar } from "./infoBars/desInfoBar.tsx/DesInfoBar";
 import { AuthorInfoBar } from "./infoBars/authorInfoBar/AuthorInfoBar";
 
 export const About = () => {
-  const [isActive, setIsActive] = useState(false);
-
-  console.log(isActive);
-
-  const mouseEnter = () => {
-    return setIsActive(true);
-  };
-
-  const mouseLeave = () => {
-    return setIsActive(false);
-  };
-
   return (
     <div className="flex flex-col justify-center items-center bg-primary500">
       {/* DESCRIPTION TEXT */}
@@ -33,8 +16,8 @@ export const About = () => {
         }}
         className="w-[1300px] my-[100px]"
       >
-        <h1 className="text-6xl font-bold uppercase text-primary300">
-          Something <br /> About <br /> Me
+        <h1 className="text-6xl font-medium text-center text-primary300 mt-[120px] -mb-4">
+        About Me
         </h1>
       </div>
       {/* BARS BODY */}
@@ -46,9 +29,7 @@ export const About = () => {
         </div>
         <AuthorInfoBar />
       </div>
-      {/* SKILLS SECTION */}
       <Skills />
-      {/* WORK SECTION */}
       <Work />
     </div>
   );

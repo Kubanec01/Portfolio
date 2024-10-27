@@ -9,9 +9,10 @@ export const NavBar = () => {
           <a
           className={style.link}
           href="">About</a>
-          <a className={style.link} href="">Skills</a>
-          <a className={style.link} href="">Hobbies</a>
-          <a className={style.link} href="">Links</a>
+          <a className={style.link} href="">Tools</a>
+          <a className={style.link} href="">Work</a>
+          <a
+          className={`text-[#161616] bg-[#ffffffe5] flex justify-center items-center w-[90px] h-[34px] rounded-xl -mt-[2px]`} href="">Contact</a>
         </Nav>
     </Navbar>
   );

@@ -7,6 +7,12 @@
     }
 }
 
-.devBarStars{
-    opacity: 0;
+.visible{
+opacity: 1;
+transition: all .6s ease;
+transform: translateY(0);
+}
+
+.invisible{
+opacity: 0;
 }

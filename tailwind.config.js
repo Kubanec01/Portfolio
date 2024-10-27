@@ -7,7 +7,8 @@ module.exports = {
       colors: {
         customWhite: '#f8f7f7',
         primary500: '#0e0e0e',
-        primary300: '#ffffff4d',
+        primary300: '#ffffff2e',
+        primary200: '#ffffffa6',
         secondary500: '#b6f445',
         secondary300: '#ace641',
         tertiary500: '#4831d4',
