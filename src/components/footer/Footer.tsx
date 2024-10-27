@@ -12,13 +12,13 @@ export const Footer = () => {
     "mb-4 w-[70px] aspect-square rounded-xl border-[3px] border-secondary500 flex justify-center items-center";
 
   return (
-    <div className={`${style.footer} w-full flex justify-center px-2 py-10`}>
+    <div className={`${style.footer} w-full flex justify-center px-2 py-10 overflow-hidden`}>
       <div className="w-[1000px] mt-[60px]">
         {/* links and robot animation */}
         <div className="w-full flex justify-between items-center h-[600px]">
           {/* links */}
           <div className="w-[60%] h-full">
-            <h1 className="text-secondary500 text-4xl font-medium">
+            <h1 className="text-secondary500 text-4xl font-medium text-nowrap">
               Thank you for visiting! <br />
               Let’s create amazing things together!
             </h1>

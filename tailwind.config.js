@@ -9,8 +9,9 @@ module.exports = {
         primary500: '#0e0e0e',
         primary300: '#ffffff4d',
         secondary500: '#b6f445',
-        secondary300: '#b6f445',
-        tertiary: '#4831d4',
+        secondary300: '#ace641',
+        tertiary500: '#4831d4',
+        tertiary300: '#4731d4de',
       }
     },
   },

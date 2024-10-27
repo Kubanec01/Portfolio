@@ -1,0 +1,12 @@
+.bar2{
+    box-shadow: 10px 10px 30px #1d1d1d1a;
+    transition: all 0.2s ease-in-out;    
+    &:hover{
+        transform: translateY(-2%);
+        box-shadow: 20px 30px 20px #00000026;
+    }
+}
+
+.desBarStars{
+    opacity: 0;
+}
