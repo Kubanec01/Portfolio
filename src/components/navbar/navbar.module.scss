@@ -1,23 +1,12 @@
-$primary-color: #4f06ec;
+// colors
+$primary: #161616;
+$secondary: #b6f445;
 
 .link {
-    position: relative;
-    transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease;
+  color: $primary;
 
-    &::after{
-        content: '';
-        background: $primary-color;
-        border-radius: 2px;
-        width: 130%;
-        height: 3px;
-        position: absolute;
-        bottom: -8px;
-        left: -15%;
-        opacity: 0;
-        transition: all 0.2s ease-in-out;
-    }
-
-    &:hover::after{
-        opacity: 1;
-    }
+  &:hover {
+    color: $secondary;
+  }
 }
