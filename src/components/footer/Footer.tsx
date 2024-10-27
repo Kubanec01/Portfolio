@@ -3,7 +3,8 @@ import { FaGithub } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { GrFacebookOption } from "react-icons/gr";
-import style from "./footer.module.scss"
+import style from "./footer.module.scss";
+import Spline from "@splinetool/react-spline";
 
 export const Footer = () => {
   // STYLES
@@ -11,12 +12,12 @@ export const Footer = () => {
     "mb-4 w-[70px] aspect-square rounded-xl border-[3px] border-secondary500 flex justify-center items-center";
 
   return (
-    <div className="w-full h-[800px] flex justify-center px-2 py-10 bg-tertiary">
-      <div className="w-[1200px] mt-[60px]">
+    <div className={`${style.footer} w-full flex justify-center px-2 py-10`}>
+      <div className="w-[1000px] mt-[60px]">
         {/* links and robot animation */}
-        <div className="w-full h-full">
+        <div className="w-full flex justify-between items-center h-[600px]">
           {/* links */}
-          <div className="w-[50%] h-full">
+          <div className="w-[60%] h-full">
             <h1 className="text-secondary500 text-4xl font-medium">
               Thank you for visiting! <br />
               Let’s create amazing things together!
@@ -48,14 +49,19 @@ export const Footer = () => {
                 </a>
               </li>
             </ul>
+            <ul className="text-xl text-secondary500 mt-6">
+              <li>jakub.z.roman@gmail.com</li>
+              <li className="text-lg">+421 903 871 518</li>
+            </ul>
           </div>
           {/* robot */}
-          <div>
-            
+          <div className="w-[40%] h-full">
+            <Spline
+              className="w-full"
+              scene="https://prod.spline.design/CZu2-tOKxLnfgn3q/scene.splinecode"
+            />
           </div>
         </div>
-        {/* phone and mail */}
-        <div></div>
       </div>
     </div>
   );

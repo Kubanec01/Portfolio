@@ -1,3 +1,11 @@
+$primary:#b6f445 ;
+$secondary:#4831d4 ;
+
+.footer{
+    background: linear-gradient(146deg, $secondary 50%, $secondary 60%, $primary 40%, $primary 80%, $secondary 80%);
+}
+
+
 .link{
     transition: all .2s ease;
 
@@ -9,3 +17,6 @@
         transform: scale(0.9);
     }
 }
+
+
+// background: linear-gradient(160deg, $secondary 30%, $secondary 60%, $primary 50%, $primary 80%);
