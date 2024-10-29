@@ -16,14 +16,14 @@ export const About = () => {
         }}
         className="w-[1300px] my-[100px]"
       >
-        <h1 className="text-6xl font-medium text-center text-primary300 mt-[120px] -mb-4">
+        <h1 className="xl:text-6xl text-5xl font-medium text-center text-primary300 md:mt-[120px] -mb-4">
         About Me
         </h1>
       </div>
       {/* BARS BODY */}
       <div className={style.barsSection}>
         {/* DEFINITION BARS */}
-        <div className="max-w-[1300px] mx-auto flex justify-between gap-10">
+        <div className="max-w-[1300px] mx-auto lg:flex justify-between gap-10 px-2">
           <DevInfoBar />
           <DesInfoBar />
         </div>

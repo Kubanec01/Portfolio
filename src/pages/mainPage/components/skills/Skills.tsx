@@ -10,14 +10,14 @@ export const Skills = () => {
       {/* SKILLS TEXT */}
       <div className="w-full mx-auto">
         <h1
-          className="text-6xl text-center font-bold uppercase text-[#4731d4c8]"
+          className="xl:text-6xl sm:text-5xl text-4xl text-center font-bold uppercase text-[#4731d4c8]"
         >
           Tools I Love <br /> To Work With
         </h1>
       </div>
       {/* SKILLS BARS */}
       <div
-      className="rounded-2xl mt-[100px] w-full flex justify-center gap-3 items-top">
+      className="rounded-2xl lg:mt-[100px] mt-[60px] w-full flex flex-wrap justify-center gap-3">
         {programs.map((p, index) => {
             return (
                 <motion.div
@@ -33,14 +33,14 @@ export const Skills = () => {
                   visible: { opacity: 1, y: 0 },
                 }}
                 key={p.id}
-                className={`${style[p.className]} bg-[#2f2f2fda] w-[200px] h-[166px] py-3 flex-col justify-center items-center rounded-2xl mt-2 p-2`}>
+                className={`${style[p.className]} bg-[#2f2f2fda] xl:w-[200px] md:w-[160px] w-[130px] xl:h-[166px] md:h-[146px] h-[126px] py-3 flex-col justify-center items-center rounded-2xl mt-2 p-2`}>
                     <div className="flex justify-center items-center">
                         <img
                         className="object-cover aspect-square rounded-2xl w-[44%] opacity-95"
                         src={p.image} alt={`${p.name} logo`} />
                     </div>
                     <div className="flex justify-center items-center mt-[12px]">
-                        <h1 className="text-[#ffffff89] text-center font-semibold text-2xl ">
+                        <h1 className="text-[#ffffff89] text-center font-semibold xl:text-2xl md:text-xl text-lg ">
                             {p.name}
                         </h1>
                     </div>

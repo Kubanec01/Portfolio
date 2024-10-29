@@ -13,17 +13,17 @@ export const DesInfoBar = () => {
     <div
       onMouseEnter={mouseEnter}
       onMouseLeave={mouseLeave}
-      className={`${style.bar2} bg-tertiary300 p-5 w-[50%] h-[300px] flex flex-col rounded-3xl relative`}
+      className={`${style.bar2} bg-tertiary300 p-5 lg:w-[50%] rounded-3xl relative`}
     >
-      <h1 className="text-5xl text-secondary500 font-semibold mt-[10px] text-secondary">
+      <h1 className="lg:text-5xl sm:text-4xl text-3xl text-secondary500 font-semibold mt-[10px] text-secondary">
         UX/UI Designer
       </h1>
-      <p className="text-2xl w-[90%] mt-[10px] text-secondary500">
+      <p className="sm:text-2xl text-xl w-[90%] mt-[10px] mb-[30px] text-secondary500">
         I’m passionate about creating user-friendly designs that focus on
         intuitive navigation and understanding user needs, using every project
         to enhance meaningful digital experiences.
       </p>
-      <PiMagicWandLight className="absolute bottom-3 right-5 text-7xl text-customWhite" />
+      <PiMagicWandLight className="absolute bottom-3 right-5 md:text-7xl sm:text-6xl text-5xl text-customWhite" />
       <PiStarFour
         className={`${visibilityStatus} absolute text-7xl text-customWhite -top-10 left-6 rotate-[20deg]`}
       />
