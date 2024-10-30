@@ -19,4 +19,14 @@ $secondary:#4831d4 ;
 }
 
 
-// background: linear-gradient(160deg, $secondary 30%, $secondary 60%, $primary 50%, $primary 80%);
+@media (width < 1565px) {
+    .footer{
+        background: linear-gradient(146deg, $secondary 50%, $secondary 60%, $primary 40%, $primary 90%, $secondary 80%);
+    }
+}
+
+@media (width < 1024px) {
+    .footer{
+        background: linear-gradient(180deg, $secondary 50%, $secondary 90%, $primary 10%, $primary 90%);
+    }
+}

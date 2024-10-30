@@ -9,20 +9,20 @@ import Spline from "@splinetool/react-spline";
 export const Footer = () => {
   // STYLES
   const link =
-    "mb-4 w-[70px] aspect-square rounded-xl border-[3px] border-secondary500 flex justify-center items-center";
+    "mb-4 xl:w-[70px] lg:w-[64px] md:w-[54px] w-[48px] xl:text-4xl lg:text-3xl text-2xl aspect-square rounded-xl md:border-[3px] border-[2px] border-secondary500 flex justify-center items-center";
 
   return (
     <div className={`${style.footer} w-full flex justify-center px-2 py-10 overflow-hidden`}>
-      <div className="w-[1000px] mt-[60px]">
+      <div className="max-w-[1000px] lg:mt-[60px] mt-[30px]">
         {/* links and robot animation */}
-        <div className="w-full flex justify-between items-center h-[600px]">
+        <div className="w-full flex justify-between items-center lg:h-[600px] md:h-[400px] h-[340px]">
           {/* links */}
-          <div className="w-[60%] h-full">
-            <h1 className="text-secondary500 text-4xl font-medium text-nowrap">
+          <div className="lg:w-[60%] h-full">
+            <h1 className="text-secondary500 lg:text-4xl md:text-4xl sm:text-3xl text-2xl lg:text-left text-center font-medium text-nowrap xl:ml-0 lg:ml-10">
               Thank you for visiting! <br />
               Let’s create amazing things together!
             </h1>
-            <ul className="text-4xl text-secondary500 mt-10">
+            <ul className="text-4xl text-secondary500 xl:mt-10 lg:mt-7 sm:mt-12 mt-10 lg:block flex justify-center md:gap-7 gap-5 xl:ml-0 lg:ml-10">
               <li className={`${link} ${style.link}`}>
                 <a className="" href="#">
                   <FaLinkedinIn />
@@ -49,13 +49,13 @@ export const Footer = () => {
                 </a>
               </li>
             </ul>
-            <ul className="text-xl text-secondary500 mt-6">
+            <ul className="sm:text-xl text-lg text-secondary500 mt-6 xl:ml-0 lg:ml-10 lg:text-left text-center">
               <li>jakub.z.roman@gmail.com</li>
-              <li className="text-lg">+421 903 871 518</li>
+              <li className="sm:text-lg text-base">+421 903 871 518</li>
             </ul>
           </div>
           {/* robot */}
-          <div className="w-[40%] h-full">
+          <div className="w-[40%] h-full lg:block hidden">
             <Spline
               className="w-full"
               scene="https://prod.spline.design/CZu2-tOKxLnfgn3q/scene.splinecode"
