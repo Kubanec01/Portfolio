@@ -1,36 +1,43 @@
 import { Nav } from "react-bootstrap";
 import Navbar from "react-bootstrap/Navbar";
 import style from "./navbar.module.scss";
-import { useScreenWidth } from "../../hooks/useScreenWidth";
+import { useScrollPosition } from "../../hooks/useScrollPosition";
 
 export const NavBar = () => {
-  const screenWidth = useScreenWidth();
+  // STYLES
+  const coloredBg = "bg-[#ffffff99] backdrop-blur-md";
+  const transparentBg = "bg-transparent";
+  const transparentBtn = "bg-transparent";
+  const coloredBtn = "bg-[#ffffffe5]";
+
+  const isAtTopPosition = useScrollPosition();
 
   return (
-    <Navbar className="absolute top-0 left-0 w-full mt-[30px] flex justify-center items-center">
-      {screenWidth > 640 ? (
-        <Nav className="lg:text-xl text-lg 2xl:gap-24 lg:gap-20 gap-16 max-w-[1300px] flex justify-center font-semibold text-secondary">
-          <a className={style.link} href="">
-            About
-          </a>
-          <a className={style.link} href="">
-            Tools
-          </a>
-          <a className={style.link} href="">
-            Work
-          </a>
-          <a
-            className={`text-[#161616] bg-[#ffffffe5] flex justify-center items-center lg:w-[90px] w-[80px] h-[34px] rounded-xl -mt-[2px]`}
-            href=""
-          >
-            Contact
-          </a>
-        </Nav>
-      ) : (
-        ""
-      )}
+    <Navbar className="fixed w-full mt-[18px] flex justify-center items-center z-[5000]">
+      <Nav
+        className={`${
+          isAtTopPosition ? transparentBg : coloredBg
+        } lg:text-xl md:text-lg lg:gap-20 md:gap-16 gap-12 flex justify-center items-center font-semibold text-secondary
+        md:px-8 px-6 md:py-3 py-2 rounded-[30px] duration-300`}
+      >
+        <a className={style.link} href="">
+          About
+        </a>
+        <a className={style.link} href="">
+          Tools
+        </a>
+        <a className={style.link} href="">
+          Work
+        </a>
+        <a
+          className={`${
+            isAtTopPosition ? coloredBtn : transparentBtn
+          } text-[#161616] flex justify-center items-center lg:w-[90px] md:w-[80px] w-[70px] h-[34px] rounded-xl -mt-[2px] duration-300`}
+          href=""
+        >
+          Contact
+        </a>
+      </Nav>
     </Navbar>
   );
 };
-
-// ! tu treba dorobit navbar ak je sirka stranky pod 640px
