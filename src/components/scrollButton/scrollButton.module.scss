@@ -1,0 +1,15 @@
+$primary500: #ffffff28;
+$secondary500: #ffffffaf;
+$primary300: #000000d7;
+$secondary300: #fffffff1;
+
+.button{
+    background: $primary500;
+    color: $secondary500;
+    transition: all .2s ease;
+
+    &:hover{
+        background: $secondary300;
+        color: $primary300;
+    }
+}

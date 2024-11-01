@@ -6,9 +6,14 @@ import style from "./skills.module.scss"
 export const Skills = () => {
 
   return (
-    <div className={`${style.skillsBody} w-full max-w-[1300px] mt-[300px] h-[700px] px-2`}>
+    <div className={`${style.skillsBody} w-full max-w-[1300px] md:mt-[300px] mt-[200px] h-[700px] px-2`}>
       {/* SKILLS TEXT */}
-      <div className="w-full mx-auto">
+      <div
+      style={{
+        scrollMargin: "260px",
+      }}
+      id="tools-title"
+      className="w-full mx-auto">
         <h1
           className="xl:text-6xl sm:text-5xl text-4xl text-center font-bold uppercase text-[#4731d4c8]"
         >

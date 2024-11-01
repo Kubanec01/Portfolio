@@ -3,7 +3,9 @@ import style from "./hero.module.scss";
 
 export const Hero = () => {
   return (
-    <div className="w-full bg-tertiary500 flex flex-col justify-center items-center h-[100vh]">
+    <div
+    id="hero-section"
+    className="w-full bg-tertiary500 flex flex-col justify-center items-center h-[100vh]">
       <div className="flex flex-col items-center mb-[8.75rem]">
         <h1 className="2xl:text-[11rem] lg:text-[8.5rem] sm:text-8xl text-7xl font-semibold text-secondary500 tracking-[-3px]">
           Hi, I'm Jacob.
@@ -19,7 +21,6 @@ export const Hero = () => {
           <IoArrowDownOutline />
         </a>
       </div>
-      {/* STARS */}
     </div>
   );
 };
