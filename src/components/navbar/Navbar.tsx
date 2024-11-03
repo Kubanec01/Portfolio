@@ -17,7 +17,7 @@ export const NavBar = () => {
       <Nav
         className={`${
           isAtTopPosition ? transparentBg : coloredBg
-        } lg:text-xl md:text-lg lg:gap-20 md:gap-16 gap-12 flex justify-center items-center font-semibold text-secondary
+        } lg:text-xl md:text-lg lg:gap-20 md:gap-16 gap-8 flex justify-center items-center font-semibold text-secondary
         md:px-8 px-6 md:py-3 py-2 rounded-[30px] duration-300`}
       >
         <a className={style.link} href="#about-title">

@@ -7,7 +7,7 @@ export const Hero = () => {
     id="hero-section"
     className="w-full bg-tertiary500 flex flex-col justify-center items-center h-[100vh]">
       <div className="flex flex-col items-center mb-[8.75rem]">
-        <h1 className="2xl:text-[11rem] lg:text-[8.5rem] sm:text-8xl text-7xl font-semibold text-secondary500 tracking-[-3px]">
+        <h1 className="2xl:text-[11rem] lg:text-[8.5rem] sm:text-8xl text-6xl font-semibold text-secondary500 tracking-[-3px]">
           Hi, I'm Jacob.
         </h1>
         <p className="2xl:text-5xl lg:text-4xl sm:text-2xl text-xl text-secondary500 lg:font-semibold font-medium lg:tracking-[-1.2px] lg:-mt-2 ">

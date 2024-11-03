@@ -14,12 +14,12 @@ export const Work = () => {
           className="flex flex-col justify-center items-center"
         >
           <h1
-            className={`${style.title} text-center lg:text-9xl sm:text-8xl text-7xl 2xl:font-extrabold font-bold`}
+            className={`${style.title} text-center lg:text-9xl sm:text-8xl text-6xl 2xl:font-extrabold font-bold`}
           >
             Digital <br /> Creations
           </h1>
           <a
-            className={`${style.linkButton} mt-[50px] lg:text-lg sm:text-base text-sm font-medium rounded-[30px] px-[10px] py-[10px] text-[#ffffff]`}
+            className={`${style.linkButton} mt-[50px] lg:text-lg sm:text-base text-sm font-medium rounded-[30px] sm:px-[10px] px-[9px] sm:py-[10px] py-[8px] text-[#ffffff]`}
             href="#"
           >
             See More

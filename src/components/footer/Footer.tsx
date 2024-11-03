@@ -18,7 +18,7 @@ export const Footer = () => {
         <div className="w-full flex justify-between items-center lg:h-[600px] md:h-[400px] h-[340px]">
           {/* links */}
           <div className="lg:w-[60%] h-full">
-            <h1 className="text-secondary500 lg:text-4xl md:text-4xl sm:text-3xl text-2xl lg:text-left text-center font-medium text-nowrap xl:ml-0 lg:ml-10">
+            <h1 className="text-secondary500 lg:text-4xl md:text-4xl sm:text-3xl text-xl lg:text-left text-center font-medium text-nowrap xl:ml-0 lg:ml-10">
               Thank you for visiting! <br />
               Let’s create amazing things together!
             </h1>
