@@ -1,7 +1,9 @@
 name: Deploy
 
 on:
-  workflow_dispatch:  # Manuálne spustenie
+    push:
+      branches:
+        - main  # Spúšťa sa pri každom push na hlavnú vetvu
 
 jobs:
   build:
@@ -10,10 +12,10 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3  # Aktualizované na v3
+        uses: actions/checkout@v3  
 
       - name: Setup Node
-        uses: actions/setup-node@v3  # Aktualizované na v3
+        uses: actions/setup-node@v3  
         with:
           node-version: 16
 
@@ -24,7 +26,7 @@ jobs:
         run: npm run build
 
       - name: Upload production-ready build files
-        uses: actions/upload-artifact@v3  # Aktualizované na v3
+        uses: actions/upload-artifact@v3  
         with:
           name: production-files
           path: ./dist
@@ -37,7 +39,7 @@ jobs:
 
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v3  # Aktualizované na v3
+        uses: actions/download-artifact@v3 
         with:
           name: production-files
           path: ./dist
