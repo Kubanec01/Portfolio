@@ -1,9 +1,10 @@
 name: Deploy
 
 on:
-  push:
-    branches:
-      - main # Spúšťa sa pri každom push na hlavnú vetvu
+  workflow_dispatch:  
+  # push:
+  #   branches:
+  #     - main # Spúšťa sa pri každom push na hlavnú vetvu
 
 jobs:
   build:

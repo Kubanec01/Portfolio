@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
 import {programs} from "../../../../data/programs"
 import style from "./skills.module.scss"
+import { Trans } from "react-i18next";
 
 
 export const Skills = () => {
+
 
   return (
     <div className={`${style.skillsBody} w-full max-w-[1300px] md:mt-[300px] mt-[200px] h-[700px] px-2`}>
@@ -17,7 +19,9 @@ export const Skills = () => {
         <h1
           className="xl:text-6xl sm:text-5xl text-4xl text-center font-bold uppercase text-[#4731d4c8]"
         >
-          Tools I Love <br /> To Work With
+          <Trans
+          i18nKey={'skills.title'}
+          />
         </h1>
       </div>
       {/* SKILLS BARS */}

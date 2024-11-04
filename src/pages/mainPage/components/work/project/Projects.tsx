@@ -1,7 +1,8 @@
-import { project } from "../../../../../data/projects";
+import { AllProjects } from "../../../../../data/AllProjects";
 import { FiArrowUpRight } from "react-icons/fi";
 import style from "./project.module.scss"
 import { useHoverStatus } from "../../../../../hooks/useHoverStatus";
+import { useTranslation } from "react-i18next";
 
 export const Projects = () => {
 
@@ -9,6 +10,10 @@ export const Projects = () => {
 
 
   const activityStatus = isActive ? style.active : style.inactive;
+
+  const project = AllProjects()
+
+  const {t} = useTranslation()
 
   return (
     <>
@@ -49,7 +54,7 @@ export const Projects = () => {
               </div>
               <div className="md:flex hidden justify-center items-end">
                 <a className={`${activityStatus} text-lg flex items-center text-nowrap px-3 py-1 rounded-2xl mb-[20px] mr-4`} href="#">
-                  See More
+                  {t('work.linkButton')}
                   <FiArrowUpRight  className="text-xl" />
                 </a>
               </div>

@@ -1,13 +1,14 @@
 import style from "./desInfoBar.module.scss";
 import { PiMagicWandLight, PiStarFour } from "react-icons/pi";
 import { useHoverStatus } from "../../../../../../hooks/useHoverStatus";
+import { useTranslation } from "react-i18next";
 
 export const DesInfoBar = () => {
+  const { t } = useTranslation();
 
-  const {isActive, mouseEnter, mouseLeave} = useHoverStatus()
+  const { isActive, mouseEnter, mouseLeave } = useHoverStatus();
 
   const visibilityStatus = isActive ? style.visible : style.invisible;
-
 
   return (
     <div
@@ -16,12 +17,10 @@ export const DesInfoBar = () => {
       className={`${style.bar2} bg-tertiary300 p-5 lg:w-[50%] rounded-3xl relative`}
     >
       <h1 className="lg:text-5xl sm:text-4xl text-3xl text-secondary500 font-semibold mt-[10px] text-secondary">
-        UX/UI Designer
+        {t("about.desBar.title")}
       </h1>
       <p className="sm:text-2xl text-xl w-[90%] mt-[10px] mb-[30px] text-secondary500">
-        I’m passionate about creating user-friendly designs that focus on
-        intuitive navigation and understanding user needs, using every project
-        to enhance meaningful digital experiences.
+        {t("about.desBar.desc")}
       </p>
       <PiMagicWandLight className="absolute bottom-3 right-5 md:text-7xl sm:text-6xl text-5xl text-customWhite" />
       <PiStarFour

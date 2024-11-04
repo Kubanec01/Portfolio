@@ -4,8 +4,12 @@ import { Work } from "../work/Work";
 import { DevInfoBar } from "./infoBars/devInfoBar/DevInfoBar";
 import { DesInfoBar } from "./infoBars/desInfoBar.tsx/DesInfoBar";
 import { AuthorInfoBar } from "./infoBars/authorInfoBar/AuthorInfoBar";
+import { useTranslation } from "react-i18next";
 
 export const About = () => {
+
+  const {t} = useTranslation()
+
   return (
     <div className="flex flex-col justify-center items-center bg-primary500">
       {/* DESCRIPTION TEXT */}
@@ -17,7 +21,7 @@ export const About = () => {
         className="w-[1300px] my-[100px]"
       >
         <h1 className="xl:text-6xl text-5xl font-medium text-center text-primary300 md:mt-[120px] -mb-4">
-        About Me
+        {t('about.title')}
         </h1>
       </div>
       {/* BARS BODY */}

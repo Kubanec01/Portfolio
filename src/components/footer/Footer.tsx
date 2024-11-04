@@ -5,6 +5,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { GrFacebookOption } from "react-icons/gr";
 import style from "./footer.module.scss";
 import Spline from "@splinetool/react-spline";
+import { Trans } from "react-i18next";
 
 export const Footer = () => {
   // STYLES
@@ -19,8 +20,9 @@ export const Footer = () => {
           {/* links */}
           <div className="lg:w-[60%] h-full">
             <h1 className="text-secondary500 lg:text-4xl md:text-4xl sm:text-3xl text-xl lg:text-left text-center font-medium text-nowrap xl:ml-0 lg:ml-10">
-              Thank you for visiting! <br />
-              Let’s create amazing things together!
+              <Trans
+              i18nKey={'footer.title'}
+              />
             </h1>
             <ul className="text-4xl text-secondary500 xl:mt-10 lg:mt-7 sm:mt-12 mt-10 lg:block flex justify-center md:gap-7 gap-5 xl:ml-0 lg:ml-10">
               <li className={`${link} ${style.link}`}>
