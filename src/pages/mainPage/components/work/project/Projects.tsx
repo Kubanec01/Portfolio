@@ -48,7 +48,7 @@ export const Projects = () => {
                 <h1 className="sm:text-2xl text-xl font-semibold md:text-left text-center text-customWhite mt-[20px] md:ml-[20px]">
                   {p.title}
                 </h1>
-                <p className="sm:text-lg sm:font-medium xl:w-[70%] md:w-[85%] md:px-0 sm:px-9 px-5 md:text-left text-center text-primary200 mt-[2px] md:ml-[20px]">
+                <p className="sm:text-lg sm:font-medium xl:w-[70%] md:w-[85%] md:px-0 sm:px-9 px-2 md:text-left text-center text-primary200 sm:mt-[2px] mt-[6px] md:ml-[20px]">
                   {p.desc}
                 </p>
               </div>

@@ -10,7 +10,7 @@ import { Trans } from "react-i18next";
 export const Footer = () => {
   // STYLES
   const link =
-    "mb-4 xl:w-[70px] lg:w-[64px] md:w-[54px] w-[48px] xl:text-4xl lg:text-3xl text-2xl aspect-square rounded-xl md:border-[3px] border-[2px] border-secondary500 flex justify-center items-center";
+    "mb-4 xl:w-[70px] lg:w-[64px] md:w-[54px] w-[46px] xl:text-4xl lg:text-3xl text-2xl aspect-square rounded-xl md:border-[3px] border-[2px] border-secondary500 flex justify-center items-center";
 
   return (
     <div className={`${style.footer} w-full flex justify-center px-2 py-10 overflow-hidden`}>
@@ -19,12 +19,12 @@ export const Footer = () => {
         <div className="w-full flex justify-between items-center lg:h-[600px] md:h-[400px] h-[340px]">
           {/* links */}
           <div className="lg:w-[60%] h-full">
-            <h1 className="text-secondary500 lg:text-4xl md:text-4xl sm:text-3xl text-xl lg:text-left text-center font-medium text-nowrap xl:ml-0 lg:ml-10">
+            <h1 className="text-secondary500 lg:text-4xl md:text-4xl sm:text-3xl text-lg lg:text-left text-center font-medium text-nowrap xl:ml-0 lg:ml-10">
               <Trans
               i18nKey={'footer.title'}
               />
             </h1>
-            <ul className="text-4xl text-secondary500 xl:mt-10 lg:mt-7 sm:mt-12 mt-10 lg:block flex justify-center md:gap-7 gap-5 xl:ml-0 lg:ml-10">
+            <ul className="text-4xl text-secondary500 xl:mt-10 lg:mt-7 sm:mt-12 mt-10 lg:block flex justify-center md:gap-7 gap-4 xl:ml-0 lg:ml-10">
               <li className={`${link} ${style.link}`}>
                 <a className="" href="#">
                   <FaLinkedinIn />

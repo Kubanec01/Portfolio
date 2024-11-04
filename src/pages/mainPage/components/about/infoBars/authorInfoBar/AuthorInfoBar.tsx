@@ -52,7 +52,7 @@ export const AuthorInfoBar = () => {
         <div className="w-full mt-[42px]">
           {/* IMAGE */}
           <div
-          className="mx-auto h-[400px]"
+          className="mx-auto md:h-[400px] h-[300px]"
           >
             <img
             className="object-cover w-full h-full rounded-2xl"
@@ -62,10 +62,10 @@ export const AuthorInfoBar = () => {
           <div
           className="mx-auto"
           >
-            <h1 className="text-4xl mt-[40px] md:font-medium text-[#ffffffda]">
+            <h1 className="md:text-4xl text-3xl sm:mt-[40px] mt-[20px] md:font-medium text-[#ffffffda]">
               Junior Front-End Developer <br /> from Slovakia.
             </h1>
-            <p className="text-xl md:font-normal font-light sm:w-[86%] w-[96%] mt-[30px] text-[#ffffff83]">
+            <p className="text-lg md:font-normal font-light sm:w-[86%] w-[96%] sm:mt-[30px] mt-[20px] text-[#ffffff83]">
               With a strong interest in web design and UX/UI, I love working
               with HTML, CSS, and TypeScript while actively focusing on React
               and modern design technologies such as i18next, Tailwind,
