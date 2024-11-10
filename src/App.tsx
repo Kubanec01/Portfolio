@@ -6,7 +6,9 @@ import { ScrollButton } from "./components/scrollButton/ScrollButton"
 
 function App() {
   return (
-    <Router>
+    <Router 
+    basename="/Portfolio"
+    >
       <NavBar />
       <MainRoutes />
       <Footer />
