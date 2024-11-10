@@ -7,6 +7,7 @@ type Project = {
   title: string;
   desc: string;
   image: string;
+  link: string;
 };
 
 export const AllProjects = () => {
@@ -19,12 +20,14 @@ export const AllProjects = () => {
       title: t('work.workBars.residentEvil4.title'),
       desc: t('work.workBars.residentEvil4.desc'),
       image: reImg,
+      link: "https://kubanec01.github.io/ResidentEvil4Wiki/",
     },
     {
       id: "goPro-shop-work",
       title: t('work.workBars.goProShoppingPage.title'),
       desc: t('work.workBars.goProShoppingPage.desc'),
       image: goProImg,
+      link: "#",
     },
   ];
 
