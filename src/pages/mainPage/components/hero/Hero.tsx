@@ -14,7 +14,7 @@ export const Hero = () => {
         <h1 className="2xl:text-[11rem] lg:text-[8.5rem] lg:text-8xl md:text-7xl text-[2.7rem] font-semibold text-secondary500 tracking-[-3px]">
           {t('hero.title')}
         </h1>
-        <p className="2xl:text-5xl lg:text-4xl sm:text-2xl text-xl text-secondary500 lg:font-semibold font-medium lg:tracking-[-1.2px] xl:-mt-2 md:mt-6 mt-0 ">
+        <p className="2xl:text-5xl lg:text-4xl sm:text-2xl text-xl text-secondary500 lg:font-semibold font-medium lg:tracking-[-1.2px] md:mt-6 mt-0 ">
           {t('hero.title2')}
         </p>
       </div>
