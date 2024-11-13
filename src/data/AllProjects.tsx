@@ -27,7 +27,7 @@ export const AllProjects = () => {
       title: t('work.workBars.goProShoppingPage.title'),
       desc: t('work.workBars.goProShoppingPage.desc'),
       image: goProImg,
-      link: "#",
+      link: "https://kubanec01.github.io/ActionCam-Store/",
     },
   ];
 
