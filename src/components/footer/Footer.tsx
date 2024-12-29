@@ -26,7 +26,7 @@ export const Footer = () => {
             </h1>
             <ul className="text-4xl text-secondary500 xl:mt-10 lg:mt-7 sm:mt-12 mt-10 lg:block flex justify-center md:gap-7 gap-4 xl:ml-0 lg:ml-10">
               <li className={`${link} ${style.link}`}>
-                <a className="" href="#">
+                <a href="https://www.linkedin.com/in/jakub-roman-4b1664338/" target="_blank">
                   <FaLinkedinIn />
                 </a>
               </li>

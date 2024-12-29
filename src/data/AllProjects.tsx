@@ -1,5 +1,6 @@
 import reImg from "../assets/macbook-re4-work-img (1).png";
 import goProImg from "../assets/macbook-gopro-work-img.png";
+import artGalleryImg from "../assets/macbook-art-gallery-festival-img.png"
 import { useTranslation } from "react-i18next";
 
 type Project = {
@@ -28,6 +29,13 @@ export const AllProjects = () => {
       desc: t('work.workBars.goProShoppingPage.desc'),
       image: goProImg,
       link: "https://kubanec01.github.io/ActionCam-Store/",
+    },
+    {
+      id: "art-gallery-festival",
+      title: t('work.workBars.artGalleryFestival.title'),
+      desc: t('work.workBars.artGalleryFestival.desc'),
+      image: artGalleryImg,
+      link: "https://kubanec01.github.io/Art_Gallery_Festival/",
     },
   ];
 

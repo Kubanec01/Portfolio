@@ -1,6 +1,7 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
+import { desc } from "framer-motion/client";
 
 // the translations
 // (tip move them in a JSON file and import them,
@@ -52,6 +53,10 @@ const resources = {
             title: "Action Camera Store",
             desc: "A project with a darker color palette, focused on a more serious visual design. It features a shopping cart with add/remove functionality, and the cart contents are saved in LocalStorage for a seamless user experience.",
           },
+          artGalleryFestival: {
+            title: "Art Gallery Festival",
+            desc: "The Art Gallery Festival is a project focused on visual design and the blending of genres, with an emphasis on flexibility. The design combines modern aesthetics with functionality, prioritizing user experience and seamless interaction.",
+          },
         },
       },
     },
@@ -100,6 +105,10 @@ const resources = {
           goProShoppingPage: {
             title: "Action Camera Store",
             desc: "Projekt s tmavšou farebnou paletou, zameraný na vážnejší vizuálny dizajn. Obsahuje nákupný košík s funkciou pridávania/odstraňovania položiek a obsah košíka sa ukladá do LocalStorage pre plynulý používateľský zážitok.",
+          },
+          artGalleryFestival: {
+            title: "Art Gallery Festival",
+            desc: "Art Gallery Festival je projekt zameraný na vizuálny dizajn a prepájanie žánrov s dôrazom na flexibilitu. Kombinuje modernú estetiku s funkčnosťou a kladie dôraz na užívateľský zážitok a plynulosť.",
           },
         },
       },
