@@ -26,7 +26,7 @@ export const Work = () => {
           </h1>
           <a
             className={`${style.linkButton} mt-[50px] lg:text-lg sm:text-base text-sm font-medium rounded-[30px] sm:px-[10px] px-[9px] sm:py-[10px] py-[8px] text-[#ffffff]`}
-            href="#"
+            href="https://github.com/Kubanec01" target="_blank"
           >
             {t('work.linkButton')}
           </a>

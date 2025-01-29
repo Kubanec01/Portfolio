@@ -28,26 +28,14 @@ export const programs: Program[] = [
   },
   {
     id: "react",
-    name: "React/Native",
+    name: "React",
     image: reactLogo,
     className: "react",
-  },
-  {
-    id: "photoshop",
-    name: "Photoshop",
-    image: photoshopLogo,
-    className: "photoshop",
   },
   {
     id: "figma",
     name: "Figma",
     image: figmaLogo,
     className: "figma",
-  },
-  {
-    id: "procreate",
-    name: "Procreate",
-    image: procreateLogo,
-    className: "procreate",
   },
 ];
