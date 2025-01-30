@@ -20,7 +20,7 @@ export const About = () => {
         }}
         className="w-[1300px] my-[100px]"
       >
-        <h1 className="xl:text-6xl text-5xl font-medium text-center text-primary300 md:mt-[120px] -mb-4">
+        <h1 className="xl:text-6xl md:text-5xl text-4xl font-medium text-center text-primary300 md:mt-[120px] -mb-4">
         {t('about.title')}
         </h1>
       </div>

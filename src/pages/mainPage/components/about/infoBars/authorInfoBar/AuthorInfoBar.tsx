@@ -52,7 +52,7 @@ export const AuthorInfoBar = () => {
         <div className="w-full mt-[42px]">
           {/* IMAGE */}
           <div
-          className="mx-auto md:h-[400px] h-[300px]"
+          className="mx-auto w-[90%] md:h-[400px] h-[300px]"
           >
             <img
             className="object-cover w-full h-full rounded-2xl"
@@ -60,9 +60,9 @@ export const AuthorInfoBar = () => {
           </div>
           {/* TEXT */}
           <div
-          className="mx-auto"
+          className="mx-auto md:px-10 px-4"
           >
-            <h1 className="md:text-4xl text-3xl sm:mt-[40px] mt-[20px] md:font-medium text-[#ffffffda]">
+            <h1 className="w-[90%] md:text-4xl text-3xl sm:mt-[40px] mt-[20px] md:font-medium text-[#ffffffda]">
               Junior Front-End Developer <br /> from Slovakia.
             </h1>
             <p className="text-lg md:font-normal font-light sm:w-[86%] w-[96%] sm:mt-[30px] mt-[20px] text-[#ffffff83]">

@@ -8,7 +8,7 @@ export const Skills = () => {
 
 
   return (
-    <div className={`${style.skillsBody} w-full max-w-[1300px] md:mt-[300px] mt-[150px] h-[700px] px-2`}>
+    <div className={`${style.skillsBody} w-full max-w-[1300px] md:mt-[300px] mt-[150px] lg:h-[700px] h-[500px] px-2`}>
       {/* SKILLS TEXT */}
       <div
       style={{

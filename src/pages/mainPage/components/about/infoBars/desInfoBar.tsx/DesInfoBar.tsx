@@ -14,12 +14,12 @@ export const DesInfoBar = () => {
     <div
       onMouseEnter={mouseEnter}
       onMouseLeave={mouseLeave}
-      className={`${style.bar2} bg-tertiary300 p-5 lg:w-[50%] rounded-3xl relative`}
+      className={`${style.bar2} bg-tertiary300 p-5 lg:w-[50%] w-[90%] mx-auto rounded-3xl relative`}
     >
       <h1 className="lg:text-5xl sm:text-4xl text-3xl text-secondary500 font-semibold mt-[10px] text-secondary">
         {t("about.desBar.title")}
       </h1>
-      <p className="sm:text-2xl text-xl md:w-[90%] w-[95%] mt-[10px] mb-[30px] text-secondary500">
+      <p className="sm:text-2xl text-xl md:w-[90%] w-[95%] md:mt-[10px] mt-[2px] mb-[30px] text-secondary500">
         {t("about.desBar.desc")}
       </p>
       <PiMagicWandLight className="absolute bottom-3 right-5 md:text-7xl sm:text-6xl text-5xl text-customWhite" />

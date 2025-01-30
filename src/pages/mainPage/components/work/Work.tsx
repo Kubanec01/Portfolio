@@ -8,7 +8,7 @@ export const Work = () => {
 
   return (
     <div className="w-full">
-      <div className="max-w-[1400px] mx-auto lg:mt-[100px] mt-[100px] mb-[160px] px-2">
+      <div className="max-w-[1400px] w-[96%] mx-auto lg:mt-[100px] mt-[100px] mb-[160px] px-2">
         {/* WORK TITLE/LINK BUTTON */}
         <div
           style={{
