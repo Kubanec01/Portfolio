@@ -1,8 +1,6 @@
 import tsLogo from "../assets/Type-Script-logo-img.png"
 import reactLogo from "../assets/react-logo-img.png"
 import figmaLogo from "../assets/figma-logo-img.png"
-import photoshopLogo from "../assets/Photoshop-logo-img.png"
-import procreateLogo from "../assets/Procreate-logo-img.jpg"
 import javaScriptLogo from "../assets/JavaScript-logo-img.png"
 
 
