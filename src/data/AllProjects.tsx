@@ -1,6 +1,7 @@
 import reImg from "../assets/macbook-re4-work-img (1).png";
 import goProImg from "../assets/macbook-gopro-work-img.png";
 import artGalleryImg from "../assets/macbook-art-gallery-festival-img.png"
+import moneySaverImg from "../assets/money-saver-img..png"
 import { useTranslation } from "react-i18next";
 
 type Project = {
@@ -22,6 +23,13 @@ export const AllProjects = () => {
       desc: t('work.workBars.goProShoppingPage.desc'),
       image: goProImg,
       link: "https://kubanec01.github.io/ActionCam-Store/",
+    },
+    {
+      id: "money-saver-app",
+      title: t('work.workBars.moneySaverApp.title'),
+      desc: t('work.workBars.moneySaverApp.desc'),
+      image: moneySaverImg,
+      link: "https://github.com/Kubanec01/Money_Saver_App/",
     },
     {
       id: "resident-evil-work",
