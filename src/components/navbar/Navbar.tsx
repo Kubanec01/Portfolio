@@ -35,7 +35,7 @@ export const NavBar = () => {
         <a
           className={`${
             isAtTopPosition ? coloredBtn : transparentBtn
-          } text-[#161616] flex justify-center items-center lg:w-[90px] md:w-[80px] w-[70px] h-[34px] rounded-xl -mt-[2px] duration-300`}
+          } text-[#161616] flex justify-center items-center lg:w-[90px] md:w-[80px] w-[70px] md:h-[34px] h-[24px] rounded-xl -mt-[2px] duration-300`}
           href="mailto:jakub.z.roman@gmail.com"
         >
           {t('navbar.contact')}

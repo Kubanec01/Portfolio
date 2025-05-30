@@ -8,7 +8,7 @@ export const Work = () => {
 
   return (
     <div className="w-full">
-      <div className="max-w-[1400px] w-[96%] mx-auto lg:mt-[100px] mt-[100px] mb-[160px] px-2">
+      <div className="max-w-[1400px] w-[96%] mx-auto lg:mt-[100px] md:mt-[100px] mt-[160px] mb-[160px] px-2">
         {/* WORK TITLE/LINK BUTTON */}
         <div
           style={{
@@ -25,14 +25,14 @@ export const Work = () => {
             />
           </h1>
           <a
-            className={`${style.linkButton} mt-[50px] lg:text-lg sm:text-base text-sm font-medium rounded-[30px] sm:px-[10px] px-[9px] sm:py-[10px] py-[8px] text-[#ffffff]`}
+            className={`${style.linkButton} md:mt-[50px] mt-[40px] lg:text-lg sm:text-base text-sm font-medium rounded-[30px] sm:px-[10px] px-[9px] sm:py-[10px] py-[8px] text-[#ffffff]`}
             href="https://github.com/Kubanec01" target="_blank"
           >
             {t('work.linkButton')}
           </a>
         </div>
         {/* WORK BARS */}
-        <div className="mt-[80px] flex flex-col items-center md:gap-32 gap-16 justify-center">
+        <div className="md:mt-[80px] mt-[50px] flex flex-col items-center md:gap-32 gap-16 justify-center">
           <Projects />
         </div>
       </div>

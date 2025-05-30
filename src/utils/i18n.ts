@@ -20,7 +20,7 @@ const resources = {
       },
       hero: {
         title: "Hi, I'm Jacob.",
-        title2: "Creative Web Designer",
+        title2: "Front End Developer",
       },
       about: {
         title: "About Me",
@@ -32,9 +32,9 @@ const resources = {
           title: "UX/UI Designer",
           desc: "I’m passionate about creating user-friendly designs that focus on intuitive navigation and understanding user needs, using every project to enhance meaningful digital experiences.",
         },
-        authorBar: {
-          title: "Junior Front-End Developer <br/> from Slovakia.",
-          desc: "With a deep passion for web design and UX/UI, I focus on modern technologies and frameworks. I am currently enhancing my skills in React and gaining valuable experience in front-end development. I continuously seek out new frameworks and design styles that can elevate the user experience and make my projects stand out. In my free time, I explore emerging technologies and keep up with the latest trends in design. You can check out my projects below or directly on GitHub.",
+        authorMainBar: {
+          title: "Junior Front-End Developer <br /> from Slovakia.",
+          desc: "I’m a junior front-end developer who enjoys building intuitive and visually clear interfaces. I focus on transforming design concepts and features into efficient, maintainable code using modern web technologies. What I enjoy working with: React for its structured approach to building user interfaces and the flexibility that comes with hooks. It helps keep code clean and modular. I typically build projects using Vite — it's fast, reliable, and makes the overall development process much smoother and more efficient.",
         },
       },
       skills: {
@@ -45,8 +45,8 @@ const resources = {
         linkButton: "See More",
         workBars: {
           moneySaverApp: {
-            title: "(Currently working on): Money Saver App",
-            desc: "This application allows users to save money in a fun, space-themed environment, offering a more engaging way to keep track of their finances. The main focus is on accurate money calculations, dividing expenses into multiple categories, and providing a clear overview with numbers and percentages.",
+            title: "Money Saver App",
+            desc: "Money Saver App is a modern tool designed to support personal finance management and effective money-saving habits.Set your budget, categorize your expenses, and track exactly where your money goes — all in a sleek, space-themed environment.",
           },
           goProShoppingPage: {
             title: "Action Camera Store",
@@ -77,7 +77,6 @@ const resources = {
       },
       hero: {
         title: "Ahoj, ja som Jakub.",
-        title2: "Kreatívny Webový Dizajnér.",
       },
       about: {
         title: "O Mne",
@@ -89,9 +88,9 @@ const resources = {
           title: "UX/UI Designer",
           desc: "Som nadšený pre vytváranie užívateľsky prívetivých dizajnov, ktoré sa zameriavajú na intuitívne navigovanie a pochopenie potrieb užívateľov, pričom každým projektom sa snažím zlepšiť zmysluplné digitálne zážitky.",
         },
-        authorBar: {
-          title: "Junior Front-End Developer <br/> zo Slovenska.",
-          desc: "S hlbokým záujmom o webový dizajn a UX/UI sa zameriavam na moderné technológie a frameworky. Aktuálne posilňujem svoje zručnosti v Reacte a získavam cenné skúsenosti vo front-end vývoji. Neustále vyhľadávam nové frameworky a dizajnové štýly, ktoré môžu zvýšiť používateľskú skúsenosť a poskytnúť mojim projektom jedinečnosť. Vo voľnom čase objavujem nové technológie a sledujem najnovšie trendy v dizajne. Moje projekty si môžete pozrieť nižšie alebo priamo na GitHub.",
+        authorMainBar: {
+          title: "Junior front-end developer <br /> zo Slovenska.",
+          desc: "Som junior front-end developer, ktorý rád vytvára intuitívne a vizuálne prehľadné rozhrania. Zameriavam sa na premenu dizajnových konceptov a funkcií na efektívny, udržiavateľný kód pomocou moderných webových technológií. Najradšej pracujem s: Reactom pre jeho štruktúrovaný prístup k tvorbe používateľských rozhraní a flexibilitu, ktorú poskytujú hooky. Pomáha udržiavať kód čistý a modulárny. Projekty zvyčajne staviam pomocou Vite — je rýchly, spoľahlivý a celý vývojový proces vďaka nemu prebieha oveľa plynulejšie a efektívnejšie.",
         },
       },
       skills: {

@@ -26,7 +26,7 @@ export const Skills = () => {
       </div>
       {/* SKILLS BARS */}
       <div
-      className="rounded-2xl lg:mt-[100px] mt-[60px] w-full flex flex-wrap justify-center gap-3">
+      className="rounded-2xl lg:mt-[100px] md:mt-[60px] mt-[30px] w-full flex flex-wrap justify-center gap-3">
         {programs.map((p, index) => {
             return (
                 <motion.div

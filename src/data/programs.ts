@@ -2,6 +2,7 @@ import tsLogo from "../assets/Type-Script-logo-img.png"
 import reactLogo from "../assets/react-logo-img.png"
 import figmaLogo from "../assets/figma-logo-img.png"
 import javaScriptLogo from "../assets/JavaScript-logo-img.png"
+import nextJsLogo from "../assets/nextJs-logo-img.jpeg"
 
 
 type Program = {
@@ -28,6 +29,12 @@ export const programs: Program[] = [
     id: "react",
     name: "React",
     image: reactLogo,
+    className: "react",
+  },
+  {
+    id: "next-js",
+    name: "Next.js",
+    image: nextJsLogo,
     className: "react",
   },
   {

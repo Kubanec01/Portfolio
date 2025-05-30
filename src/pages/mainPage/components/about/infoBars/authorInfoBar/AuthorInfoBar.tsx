@@ -40,11 +40,11 @@ export const AuthorInfoBar = () => {
           <div className="w-[55%] py-10">
             <h1 className="xl:text-4xl text-3xl xl:mt-[60px] mt-[40px] font-bold text-[#ffffffda]">
               <Trans 
-              i18nKey={'about.authorBar.title'}
+              i18nKey={'about.authorMainBar.title'}
               />
             </h1>
             <p className="xl:text-2xl text-xl xl:w-[85%] lg:w-[90%] w-[98%] mt-[10px] text-[#ffffff83]">
-              {t('about.authorBar.desc')}
+              {t('about.authorMainBar.desc')}
             </p>
           </div>
         </div>
@@ -63,19 +63,12 @@ export const AuthorInfoBar = () => {
           className="mx-auto md:px-10 px-4"
           >
             <h1 className="w-[90%] md:text-4xl text-3xl sm:mt-[40px] mt-[20px] md:font-medium text-[#ffffffda]">
-              Junior Front-End Developer <br /> from Slovakia.
+              <Trans
+              i18nKey={'about.authorMainBar.title'}
+               />
             </h1>
-            <p className="text-lg md:font-normal font-light sm:w-[86%] w-[96%] sm:mt-[30px] mt-[20px] text-[#ffffff83]">
-              With a strong interest in web design and UX/UI, I love working
-              with HTML, CSS, and TypeScript while actively focusing on React
-              and modern design technologies such as i18next, Tailwind,
-              Bootstrap, Framer Motion, and many others.
-              <br />
-               Currently, I’m
-              enhancing my skills in React and gaining more experience in
-              front-end development. In my free time, I explore new technologies
-              and keep up with trends in design and useful frameworks. You can
-              check out my work below or directly on GitHub.
+            <p className="text-lg md:font-normal font-light sm:w-[86%] w-[96%] sm:mt-[30px] mt-[14px] text-[#ffffff83]">
+              {t('about.authorMainBar.desc')}
             </p>
           </div>
         </div>

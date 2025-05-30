@@ -24,7 +24,7 @@ export const DevInfoBar = () => {
         <p className="sm:text-2xl text-xl md:w-[84%] md:mt-[10px] mt-[2px] mb-[30px] text-secondary500">
         {t('about.devBar.desc')}
         </p>
-        <PiBrain className="absolute bottom-3 right-5 md:text-7xl sm:text-6xl text-5xl text-customWhite" />
+        <PiBrain className="absolute bottom-3 right-5 md:text-7xl sm:text-6xl text-4xl text-customWhite" />
         {/* STARS ICONS */}
         <PiStarFour
           className={`${visibilityStatus} absolute text-7xl text-customWhite -top-10 left-6 rotate-[20deg]`}

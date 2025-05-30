@@ -17,18 +17,18 @@ export const AllProjects = () => {
 
   const project: Project[] = [
     {
-      id: "goPro-shop-work",
-      title: t("work.workBars.goProShoppingPage.title"),
-      desc: t("work.workBars.goProShoppingPage.desc"),
-      image: goProImg,
-      link: "https://kubanec01.github.io/ActionCam-Store/",
-    },
-    {
       id: "money-saver-app",
       title: t("work.workBars.moneySaverApp.title"),
       desc: t("work.workBars.moneySaverApp.desc"),
       image: moneySaverImg,
       link: "https://kubanec01.github.io/Money_Saver_App/",
+    },
+    {
+      id: "goPro-shop-work",
+      title: t("work.workBars.goProShoppingPage.title"),
+      desc: t("work.workBars.goProShoppingPage.desc"),
+      image: goProImg,
+      link: "https://kubanec01.github.io/ActionCam-Store/",
     },
     {
       id: "resident-evil-work",

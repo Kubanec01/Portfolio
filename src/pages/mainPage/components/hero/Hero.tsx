@@ -10,7 +10,7 @@ export const Hero = () => {
     <div
     id="hero-section"
     className="w-full bg-tertiary500 flex flex-col justify-center items-center h-[100vh]">
-      <div className="flex flex-col items-center mb-[8.75rem]">
+      <div className="flex flex-col items-center mb-[8.75rem] md:w-full w-[90%]">
         <h1 className="2xl:text-[11rem] lg:text-[8.5rem] lg:text-8xl md:text-7xl text-[2.7rem] font-semibold text-secondary500 tracking-[-3px]">
           {t('hero.title')}
         </h1>
